@@ -1,0 +1,224 @@
+.input-area {
+    padding: 10px;
+    position: relative;
+    text-align: left;
+}
+
+.input-area input {
+    padding: 15px;
+    border-radius: 25px;
+    width: 80%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.input-area .search-icon {
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #4FC3A1;
+    color: white;
+    font-size: 12px;
+    border: 2px solid #038052;
+    cursor: text;
+    margin-right: 10px;
+}
+
+.input-area .search-icon:hover {
+    background-color: white;
+    color: black;
+}
+
+.input-area .delete-selected {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 15px 20px;
+    border: 2px solid rgb(246, 95, 120);
+    border-radius: 25px;
+    background-color: rgb(252, 153, 170);
+    color: white;
+}
+
+.delete-selected:hover {
+    background-color: #da190b;
+}
+
+.delete-selected:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+
+
+
+.members-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.members-table tbody tr.editable {
+    background-color: #f0f0f0;
+}
+
+.members-table td,
+.members-table th {
+    text-align: center;
+    padding: 15px;
+}
+
+.members-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 15px;
+}
+
+.members-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.members-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.members-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+.members-table tbody tr.selected {
+    background-color: #d3d3d3;
+}
+
+@media (max-width: 767px) {
+    .members-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .members-table th,
+    .members-table td {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .members-table th,
+    .members-table td {
+        display: block;
+        width: auto;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .members-table thead {
+        display: table;
+        width: 100%;
+    }
+
+    .members-table tbody {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: auto;
+        position: relative;
+    }
+
+    .members-table tbody tr {
+        display: table;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.edit {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #038052;
+    background-color: #4FC3A1;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+
+.save{
+    
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #030980;
+    background-color: #4f9ac3;
+    color: #ffffff;
+    transition-duration: 0.4s;
+
+}
+
+.save:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.delete {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: rgb(236, 109, 109);
+    border: 2px solid #f44336;
+    color: #ffffff;
+}
+
+.edit:hover,
+.delete:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.pagi {
+    background-color: #F8F8F8;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #038052;
+    background-color: #4FC3A1;
+    color: white;
+
+}
+
+.pagi:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+
+.pagination {
+    margin-top: 10px;
+}
+
+.pagination button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 4px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination button:hover {
+    background-color: #45a049;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+}
